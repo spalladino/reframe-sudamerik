@@ -1,6 +1,6 @@
 # reframe-sudamerik
 
-A [re-frame](https://github.com/Day8/re-frame) application designed to ... well, that part is up to you.
+A [re-frame](https://github.com/Day8/re-frame) application for playing around with re-frame. The app will list products and allow to set up requests for purchases at sudamerik.
 
 ## Development Mode
 
