@@ -13,10 +13,10 @@
   (let [product (re-frame/subscribe [:product-selected])]
     (fn []
       (if-not @product [:div]
-        (let [{id :id, name :name, price :price, unit :unit} @product]
+        (let [{id :id, name :name, price :price, unit :unit, unit-qty :unit-qty} @product]
           [re-com/v-box :children
             [[re-com/title :label name :level :level2]
-             [:span (str "Codigo " id ". " "$" price " por " unit ".")]
+             [:span (str "Codigo " id ". " "$" price " por " unit-qty unit ".")]
              [re-com/hyperlink :label "Cerrar" :on-click #(re-frame/dispatch [:product-selected nil])]]])))))
 
 (defn products-filter []

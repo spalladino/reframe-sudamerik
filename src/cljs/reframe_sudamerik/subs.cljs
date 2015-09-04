@@ -19,6 +19,11 @@
    (reaction (:products @db))))
 
 (re-frame/register-sub
+ :requests
+ (fn [db]
+   (reaction (:requests @db))))
+
+(re-frame/register-sub
  :products-filter
  (fn [db]
    (reaction (:products-filter @db))))
