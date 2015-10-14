@@ -43,7 +43,7 @@
             :model amount
             :on-change #(reset! amount %)
             :validation-regex #"^\d*(\.(\d*))?$"]
-          [rc/label :label (str (:unit-qty @product) (:unit @product))]]]
+          [rc/label :label (str (:unitqty @product) (:unit @product))]]]
         (if @product
           [rc/h-box :children [
             [rc/label :label (str

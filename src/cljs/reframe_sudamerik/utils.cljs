@@ -5,5 +5,5 @@
   (* amount price))
 
 (defn total-amount
-  [{ unit-qty :unit-qty}, amount]
-  (* amount (or unit-qty 1)))
+  [{ unitqty :unitqty}, amount]
+  (* amount (or unitqty 1)))
