@@ -5,7 +5,7 @@
                  [re-frame "0.4.1"]
                  [re-com "0.6.1"]
                  [secretary "1.2.3"]
-                 [cljs-ajax "0.5.0"]]
+                 [cljs-ajax "0.5.1"]]
 
   :source-paths ["src/clj"]
 
