@@ -5,15 +5,15 @@
                  [re-frame "0.4.1"]
                  [re-com "0.6.1"]
                  [secretary "1.2.3"]
-                 [cljs-ajax "0.5.1"]]
+                 [cljs-ajax "0.5.5"]]
 
   :source-paths ["src/clj"]
 
   :plugins [[lein-cljsbuild "1.0.6"]
-            [lein-figwheel "0.3.3" :exclusions [cider/cider-nrepl]]  ]
+            [lein-figwheel "0.3.3" :exclusions [cider/cider-nrepl]]]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"
-                                    "test/js" ]
+                                    "test/js"]
 
   :cljsbuild {:builds [{:id "dev"
                         :source-paths ["src/cljs"]
